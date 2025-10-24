@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线展览馆</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- 进场动画 -->
+    <div id="entrance">
+        <div class="entrance-stars"></div>
+        <div class="entrance-content">
+            <h1 class="entrance-title">在线展览馆</h1>
+            <p class="entrance-subtitle">传承红色基因 · 铭记光辉历程</p>
+            <div class="scroll-hint">
+                <svg viewBox="0 0 24 24">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主内容区 -->
+    <div id="main-content">
+        <div class="cards-container">
+            <!-- 卡片1: 视频展示 -->
+            <div class="card active" data-index="0">
+                <div class="card-header">
+                    <h2 class="card-title">视频展示</h2>
+                    <p class="card-subtitle">回顾光辉历程</p>
+                </div>
+                <div class="card-content">
+                    <div class="video-container">
+                        <!-- 在此处添加Bilibili视频iframe -->
+                        <iframe
+                            src="//player.bilibili.com/player.html?isOutside=true&aid=113050904429748&bvid=BV1pHHLe8E22&cid=25659049845&p=1"
+                            scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片2: 海报展示 -->
+            <div class="card" data-index="1">
+                <div class="card-header">
+                    <h2 class="card-title">海报展示</h2>
+                    <p class="card-subtitle">视觉冲击与思想启迪</p>
+                </div>
+                <div class="card-content">
+                    <div class="poster-container">
+                        <!-- 替换为正式海报图片，建议使用党建主题设计 -->
+                        <span class="poster-placeholder">海报图片位置</span>
+                    </div>
+                    <p class="poster-note">在此补充海报主题与设计说明，概括视觉元素传达的核心价值。</p>
+                </div>
+            </div>
+
+            <!-- 卡片3-11: 典型人物 -->
+            <!-- 统一布局：上方为人物简介 + 图片，下方扩展更多信息，参考百科条目结构 -->
+            <div class="card" data-index="2">
+                <div class="card-header">
+                    <h2 class="card-title">Cute Puppy</h2>
+                    <p class="card-subtitle">今天在图书馆看见的</p>
+                </div>
+                <div class="card-content">
+                    <section class="bio-hero">
+                        <div class="bio-summary">
+                            <h3>人物简介</h3>
+                            <p>这是一只今天我在图书馆门口的狗狗</p>
+                            <p>还挺可爱的</p>
+                        </div>
+                        <figure class="bio-portrait">
+                            <!-- 替换为人物照片 -->
+                            <span class="portrait-placeholder">
+                                <img src="./src/img/puppy.JPG" alt="puppy">
+                            </span>
+                            <figcaption>2025©️Aronnax</figcaption>
+                        </figure>
+                    </section>
+                    <section class="bio-details">
+                        <h4>人物信息补充</h4>
+                        <p>Too Young Too Simple</p>
+                        <p>Sometimes Naive</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card" data-index="3">
+                <div class="card-header">
+                    <h2 class="card-title">人物二</h2>
+                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                </div>
+                <div class="card-content">
+                    <section class="bio-hero">
+                        <div class="bio-summary">
+                            <h3>人物简介</h3>
+                            <p>请在此编写第二位人物的简介，突出其独特贡献或经典事迹，可与前一位形成时代衔接。</p>
+                            <p>简介段落建议控制在 200 字以内，保持信息密度与阅读舒适度。</p>
+                        </div>
+                        <figure class="bio-portrait">
+                            <span class="portrait-placeholder">人物照片</span>
+                            <figcaption>添加图片来源与许可说明，保障素材合规。</figcaption>
+                        </figure>
+                    </section>
+                    <section class="bio-details">
+                        <h4>人物信息补充</h4>
+                        <p>可以在此展开人物成长轨迹、重要岗位、代表性荣誉等信息。</p>
+                        <p>如引用统计数据或文件精神，请在参考文献页进行编号标注。</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card" data-index="4">
+                <div class="card-header">
+                    <h2 class="card-title">人物三</h2>
+                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                </div>
+                <div class="card-content">
+                    <section class="bio-hero">
+                        <div class="bio-summary">
+                            <h3>人物简介</h3>
+                            <p>在此记录人物所处历史阶段、关键角色与重大贡献，突出其在党史中的位置。</p>
+                            <p>可引用重要讲话或文献陈述人物精神，为后续讨论提供权威依据。</p>
+                        </div>
+                        <figure class="bio-portrait">
+                            <span class="portrait-placeholder">人物照片</span>
+                            <figcaption>说明图片拍摄背景，保持页面信息完整性。</figcaption>
+                        </figure>
+                    </section>
+                    <section class="bio-details">
+                        <h4>人物信息补充</h4>
+                        <p>建议列出人物主要事件的时间线，或以要点形式呈现关键成果。</p>
+                        <p>可对其精神内涵进行概括，并联系新时代实践阐释现实意义。</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card" data-index="5">
+                <div class="card-header">
+                    <h2 class="card-title">人物四</h2>
+                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                </div>
+                <div class="card-content">
+                    <section class="bio-hero">
+                        <div class="bio-summary">
+                            <h3>人物简介</h3>
+                            <p>归纳人物的重要经历，聚焦与党和国家发展密切相关的贡献。</p>
+                            <p>可在此引入与人物相关的历史背景，使读者快速建立时空坐标。</p>
+                        </div>
+                        <figure class="bio-portrait">
+                            <span class="portrait-placeholder">人物照片</span>
+                            <figcaption>为照片添加必要的版权信息或出处链接。</figcaption>
+                        </figure>
+                    </section>
+                    <section class="bio-details">
+                        <h4>人物信息补充</h4>
+                        <p>可从政策推动、群众工作、理论研究等角度补充人物贡献。</p>
+                        <p>如有需要，可加入表格或引用块对重要信息进行重点标注。</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card" data-index="6">
+                <div class="card-header">
+                    <h2 class="card-title">人物五</h2>
+                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                </div>
+                <div class="card-content">
+                    <section class="bio-hero">
+                        <div class="bio-summary">
+                            <h3>人物简介</h3>
+                            <p>呈现人物在其领域内的开创性成就，突出“先锋模范”属性。</p>
+                            <p>可结合时代背景，说明其贡献为何具有里程碑意义。</p>
+                        </div>
+                        <figure class="bio-portrait">
+                            <span class="portrait-placeholder">人物照片</span>
+                            <figcaption>允许在此描述人物的精神风貌或表情细节。</figcaption>
+                        </figure>
+                    </section>
+                    <section class="bio-details">
+                        <h4>人物信息补充</h4>
+                        <p>可补充人物的代表性作品、政策推动或获得的国家级荣誉。</p>
+                        <p>如有对外交流或国际影响，可在此段进行延伸说明。</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card" data-index="7">
+                <div class="card-header">
+                    <h2 class="card-title">人物六</h2>
+                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                </div>
+                <div class="card-content">
+                    <section class="bio-hero">
+                        <div class="bio-summary">
+                            <h3>人物简介</h3>
+                            <p>在此总结人物的主线故事，强调其在特定领域的卓越贡献。</p>
+                            <p>可加入人物语录或身边人的评价，增强情感共鸣。</p>
+                        </div>
+                        <figure class="bio-portrait">
+                            <span class="portrait-placeholder">人物照片</span>
+                            <figcaption>请在此注明摄影者或档案馆信息。</figcaption>
+                        </figure>
+                    </section>
+                    <section class="bio-details">
+                        <h4>人物信息补充</h4>
+                        <p>从多维度补充人物贡献，如科技创新、基层治理、军事国防等。</p>
+                        <p>可安排小标题划分段落，方便读者快速检索重点内容。</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card" data-index="8">
+                <div class="card-header">
+                    <h2 class="card-title">人物七</h2>
+                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                </div>
+                <div class="card-content">
+                    <section class="bio-hero">
+                        <div class="bio-summary">
+                            <h3>人物简介</h3>
+                            <p>总结人物在思想理论、文化传播或社会动员方面的典型贡献。</p>
+                            <p>可对重要历史事件中的关键角色进行简要梳理。</p>
+                        </div>
+                        <figure class="bio-portrait">
+                            <span class="portrait-placeholder">人物照片</span>
+                            <figcaption>添加拍摄背景说明，保持页面严谨。</figcaption>
+                        </figure>
+                    </section>
+                    <section class="bio-details">
+                        <h4>人物信息补充</h4>
+                        <p>适合补充人物的理论观点、代表作品或群众基础。</p>
+                        <p>如涉及跨地区或跨行业协同，也可在此强调其协调能力。</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card" data-index="9">
+                <div class="card-header">
+                    <h2 class="card-title">人物八</h2>
+                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                </div>
+                <div class="card-content">
+                    <section class="bio-hero">
+                        <div class="bio-summary">
+                            <h3>人物简介</h3>
+                            <p>概述人物在新时代背景下的创新实践或改革举措。</p>
+                            <p>可引用官方报道或调研数据，突出其贡献的现实意义。</p>
+                        </div>
+                        <figure class="bio-portrait">
+                            <span class="portrait-placeholder">人物照片</span>
+                            <figcaption>图片说明示例：2023 年 ×× 地区考察现场。</figcaption>
+                        </figure>
+                    </section>
+                    <section class="bio-details">
+                        <h4>人物信息补充</h4>
+                        <p>补充项目成果、群众反馈或政策落地情况，凸显示范带动作用。</p>
+                        <p>可在此强调其工作方法或制度创新点，为学习借鉴提供思路。</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card" data-index="10">
+                <div class="card-header">
+                    <h2 class="card-title">人物九</h2>
+                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                </div>
+                <div class="card-content">
+                    <section class="bio-hero">
+                        <div class="bio-summary">
+                            <h3>人物简介</h3>
+                            <p>总结人物的基层实践、奉献精神或集体贡献，凸显榜样力量。</p>
+                            <p>可通过数据或案例说明其工作成效，展现可复制经验。</p>
+                        </div>
+                        <figure class="bio-portrait">
+                            <span class="portrait-placeholder">人物照片</span>
+                            <figcaption>示例说明：人物在基层工作现场的影像资料。</figcaption>
+                        </figure>
+                    </section>
+                    <section class="bio-details">
+                        <h4>人物信息补充</h4>
+                        <p>梳理人物的代表性事迹，突出长期坚守或攻坚克难的精神品质。</p>
+                        <p>可在此加入群众评价或媒体报道摘要，增强感染力。</p>
+                    </section>
+                </div>
+            </div>
+
+            <!-- 卡片12: 素材链接 -->
+            <div class="card" data-index="11">
+                <div class="card-header">
+                    <h2 class="card-title">素材资源</h2>
+                    <p class="card-subtitle">作业相关素材文件</p>
+                </div>
+                <div class="card-content">
+                    <div class="links-list">
+                        <div class="link-item">
+                            <span class="link-name">素材文件1</span>
+                            <a href="#" class="link-url">链接地址</a>
+                        </div>
+                        <div class="link-item">
+                            <span class="link-name">素材文件2</span>
+                            <a href="#" class="link-url">链接地址</a>
+                        </div>
+                        <div class="link-item">
+                            <span class="link-name">素材文件3</span>
+                            <a href="#" class="link-url">链接地址</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片13: 参考文献 -->
+            <div class="card" data-index="12">
+                <div class="card-header">
+                    <h2 class="card-title">参考文献</h2>
+                    <p class="card-subtitle">学术支撑与理论依据</p>
+                </div>
+                <div class="card-content">
+                    <!-- 参考文献目录：根据需要新增层级与链接 -->
+                    <nav class="reference-catalog" aria-label="参考文献目录">
+                        <ul class="catalog-level catalog-root">
+                            <li>
+                                <span class="catalog-label">参考文献</span>
+                                <ul class="catalog-level">
+                                    <li>
+                                        <span class="catalog-label">视频参考文献</span>
+                                        <ul class="catalog-level">
+                                            <li>
+                                                <a href="#" class="catalog-link" target="_blank" rel="noopener">视频链接 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="catalog-link" target="_blank" rel="noopener">视频链接 2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="catalog-label">文档参考文献</span>
+                                        <ul class="catalog-level">
+                                            <li>
+                                                <span class="catalog-entry">[1] 作者. 文献标题[J]. 期刊名称, 年份, 卷(期): 页码.</span>
+                                            </li>
+                                            <li>
+                                                <span class="catalog-entry">[2] 请在此处补充书籍或文件资料，保持正式引用格式。</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="catalog-label">图像素材来源</span>
+                                        <ul class="catalog-level">
+                                            <li>
+                                                <a href="#" class="catalog-link" target="_blank" rel="noopener">图像来源链接</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- 导航按钮 -->
+            <div class="nav-buttons">
+                <button class="nav-btn prev" id="prevBtn" disabled></button>
+                <button class="nav-btn next" id="nextBtn"></button>
+            </div>
+
+            <!-- 页码指示器 -->
+            <div class="page-indicator" id="pageIndicator" aria-label="页面切换指示"></div>
+
+            <!-- 翻页提示 -->
+            <div class="flip-hint">
+                ← 左右滑动或点击按钮切换页面 →
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+
+</body>
+
+</html>
