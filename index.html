@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>在线展览馆</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -37,10 +36,42 @@
                     <div class="video-container">
                         <!-- 在此处添加Bilibili视频iframe -->
                         <iframe
-                            src="https://player.bilibili.com/player.html?isOutside=true&aid=113050904429748&bvid=BV1pHHLe8E22&cid=25659049845&p=1"
-                            scrolling="no" border="0" frameborder="no" framespacing="0" allow="fullscreen; picture-in-picture"
-                            allowfullscreen="true">
+                            src="//player.bilibili.com/player.html?isOutside=true&aid=115450331602804&bvid=BV1AMyzB4E3R&cid=33461177951&p=1"
+                            scrolling="no" border="0" frameborder="no" framespacing="0"
+                            allow="fullscreen; picture-in-picture" allowfullscreen="true">
                         </iframe>
+                    </div>
+                    <div class="video-links" aria-label="视频相关链接">
+                        <a class="video-link" href="https://www.bilibili.com/video/BV1AMyzB4E3R/" target="_blank" rel="noopener">
+                            <span class="video-link-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="2.5" y="6" width="19" height="12" rx="2.5" />
+                                    <path d="M8 5l-2-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                                    <path d="M16 5l2-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                                    <path d="M10.2 10.2c.6-.4 1.9-.4 2.5 0 .6.4.6 1 0 1.4l-1.3.9c-.6.4-1.1-.1-1.1-.7v-1.6c0-.3.2-.6.5-.8z" fill="#fff" />
+                                    <circle cx="9.5" cy="14.3" r="1" fill="#fff" />
+                                    <circle cx="14.5" cy="14.3" r="1" fill="#fff" />
+                                </svg>
+                            </span>
+                            <span class="video-link-text">
+                                <span class="video-link-title">高清视频｜哔哩哔哩</span>
+                                <span class="video-link-desc">BV1AMyzB4E3R</span>
+                            </span>
+                        </a>
+                        <a class="video-link" href="https://pan.baidu.com/s/1Vcj6_0s-p1V7Cng6ZU2LYw" target="_blank" rel="noopener">
+                            <span class="video-link-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M7 17.5a3.5 3.5 0 0 1 0-7 3.7 3.7 0 0 1 1.5.3 5 5 0 0 1 9.7 1.6 3 3 0 0 1 3 3.1 3 3 0 0 1-3 3H7.2z" />
+                                    <circle cx="9" cy="11" r="1.1" fill="#fff" />
+                                    <circle cx="13.5" cy="9" r="1.3" fill="#fff" />
+                                    <circle cx="16.8" cy="13" r="1.2" fill="#fff" />
+                                </svg>
+                            </span>
+                            <span class="video-link-text">
+                                <span class="video-link-title">离线下载｜百度网盘</span>
+                                <span class="video-link-desc">提取码：5vk7</span>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -60,238 +91,280 @@
                 </div>
             </div>
 
-            <!-- 卡片3-11: 典型人物 -->
-            <!-- 统一布局：上方为人物简介 + 图片，下方扩展更多信息，参考百科条目结构 -->
+            <!-- 卡片3-13: 人物 -->
             <div class="card" data-index="2">
                 <div class="card-header">
-                    <h2 class="card-title">人物展览</h2>
-                    <p class="card-subtitle">周丽峰</p>
+                    <h2 class="card-title">革命时期</h2>
+                    <p class="card-subtitle">刘胡兰</p>
                 </div>
                 <div class="card-content">
                     <section class="bio-hero">
                         <div class="bio-summary">
                             <h3>人物简介</h3>
-                            <p>峰哥，网名“亡命天涯”，B站知名UP主、极限旅行与社会议题讲述者。曾自称登山运动员与纪录片人，风格犀利直白，敢言人性与社会边界。其言论常引争议，亦受追随。有人视其为民间思想者，有人讥为流量怪才。浪迹网络江湖多年，峰哥以“亡命”之姿，活成当代最真实的寓言。</p>
+                            <p>刘胡兰，1932年生于山西省文水县云周西村，她是中国人民最为熟知的革命英雄之一，毛泽东主席曾为其题词“生的伟大，死的光荣”。刘胡兰10岁起就参加了儿童团，1945年进入中共妇女干部训练班学习，1946年成为中国共产党候补党员。在短暂的青春年华里，她将全部生命投入到了争取民族独立和人民解放的伟大事业中。
+                            </p>
                         </div>
                         <figure class="bio-portrait">
                             <!-- 替换为人物照片 -->
                             <span class="portrait-placeholder">
                                 <img src="./src/img/feng.jpg" alt="puppy">
                             </span>
-                            <figcaption>2025©️Aronnax</figcaption>
+                            <figcaption>图片由AI生成</figcaption>
                         </figure>
                     </section>
                     <section class="bio-details">
                         <h4>人物信息补充</h4>
-                        <p>峰哥者，笑里藏锋，语中带火。昔行于山河，探秘于边境，自称“亡命天涯”，实则亡于体制之外，命由己定，天岂能涯？其言放浪而思深，谈性若禅，破伪道之面具；论世如剑，斩俗念之藤蔓。行迹漂泊，声名忽起，观众或奉为智者，或斥为妖言。然于他，不过一场镜花水月的自证。</p>
-                        <p>江湖之上，真伪如影。峰哥以“自由”为旗，行于世外，敢语人所不敢言。其锋，非为毁人，而为破壳之刃；其狂，非为虚张，而是对沉默的反叛。言语如刀，切开世态的油脂，笑声掩泣，举杯仍饮人间烟火。天涯何处无风浪？他以浪为床，以孤为帆，终成一代异士。</p>
-                        <p>世道多疑，英雄常被误。峰哥非圣非魔，亦非疯癫。倘以世俗之眼观之，乃癫狂之徒；若以哲者之心悟之，则是放下之人。其亡命，不为逃生，而为脱身；其天涯，不是流放，而是归途。尘世冷暖，尽入其笑中；道义虚实，皆随风散。此人如山中风，无法久留，却令人久久不忘。</p>
+                        <p>刘胡兰的革命活动主要集中在解放战争时期。她积极组织群众参与土地改革，支援前线，配合武工队镇压反动村长，在对敌斗争中迅速成长。1946年冬天，国民党阎锡山部队占领了文水县，形势急剧恶化。党组织决定让部分同志转移上山，但刘胡兰主动要求留下，坚持地下斗争。她秘密发动群众，配合武工队打击敌人，在极其危险的环境中展现了超越年龄的勇敢和坚定。
+                        </p>
+                        <p>1947年1月12日，因叛徒出卖，国民党阎锡山部队突然包围了云周西村，刘胡兰不幸被捕。面对敌人的威逼利诱和残酷的铡刀威胁，她坚贞不屈，义正辞严地回答：“怕死不当共产党！”敌人当着她的面，先后铡死了六位民兵和革命群众，企图让她屈服。但刘胡兰毫无惧色，从容地走向铡刀，英勇就义，年仅15岁。她的英雄事迹很快传遍全国。根据《二十世纪中国史纲》记载，刘胡兰的牺牲“极大地激励了解放区军民对敌斗争的勇气和决心”，她“用青春和热血铸就了不朽的丰碑”，成为中国共产党人革命气节的象征。
+                        </p>
                     </section>
                 </div>
             </div>
 
             <div class="card" data-index="3">
                 <div class="card-header">
-                    <h2 class="card-title">人物二</h2>
-                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                    <h2 class="card-title">革命时期</h2>
+                    <p class="card-subtitle">尹灵芝</p>
                 </div>
                 <div class="card-content">
                     <section class="bio-hero">
                         <div class="bio-summary">
                             <h3>人物简介</h3>
-                            <p>请在此编写第二位人物的简介，突出其独特贡献或经典事迹，可与前一位形成时代衔接。</p>
-                            <p>简介段落建议控制在 200 字以内，保持信息密度与阅读舒适度。</p>
+                            <p>尹灵芝，1931年生于山西省寿阳县赵家垴村，是抗日战争和解放战争时期涌现出的著名少年女英雄。她出身贫苦农民家庭，从小受到革命思想的熏陶，13岁就担任了赵家垴村的儿童团长，15岁成为该村妇救会主任，并于1947年正式加入中国共产党。这位年轻的共产党员，以其坚定的信念和无畏的牺牲精神，在山西的革命历史上写下了壮烈的一笔。
+                            </p>
                         </div>
                         <figure class="bio-portrait">
                             <span class="portrait-placeholder">人物照片</span>
-                            <figcaption>添加图片来源与许可说明，保障素材合规。</figcaption>
+                            <figcaption>图片由AI生成</figcaption>
                         </figure>
                     </section>
                     <section class="bio-details">
                         <h4>人物信息补充</h4>
-                        <p>可以在此展开人物成长轨迹、重要岗位、代表性荣誉等信息。</p>
-                        <p>如引用统计数据或文件精神，请在参考文献页进行编号标注。</p>
+                        <p>尹灵芝的革命事迹与她的家乡赵家垴村紧密相连。在抗战时期，她带领儿童团员站岗放哨、送情报、宣传抗日，机智勇敢。解放战争期间，阎锡山军队占领寿阳后，面对白色恐怖，尹灵芝坚持斗争，带领群众进行地雷战、破袭战，并冒着生命危险为游击队筹集和藏匿公粮。1947年秋，因叛徒出卖，阎锡山军队部队包围了赵家垴。尹灵芝在组织群众转移后，为保护藏匿在村里的万余斤公粮，不顾个人安危返回村子，最终不幸被捕。
+                        </p>
+                        <p>被捕后，尹灵芝经历了长达15个多月的残酷折磨。敌人对她施以各种酷刑，包括压杠子、烙铁烫、竹签刺指甲等，企图从她口中获得党组织和公粮的下落。但她始终坚贞不屈，严守党的秘密。1947年11月3日，无计可施的敌人在寿阳县宗艾镇瑞祥寺设下刑场，将同时被捕的乡亲一个个杀害，威胁她投降。尹灵芝毫无惧色，高呼“中国共产党万岁！”“毛主席万岁！”等口号，英勇就义，年仅16岁。她的牺牲，展现了共产党员视死如归的崇高气节。根据《三晋英模》一书记载，尹灵芝被誉为“刘胡兰式的少年英雄”，她的精神“是坚定的共产主义信念和不怕牺牲的革命英雄主义精神的集中体现”。
+                        </p>
                     </section>
                 </div>
             </div>
 
             <div class="card" data-index="4">
                 <div class="card-header">
-                    <h2 class="card-title">人物三</h2>
-                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                    <h2 class="card-title">革命时期</h2>
+                    <p class="card-subtitle">王光</p>
                 </div>
                 <div class="card-content">
                     <section class="bio-hero">
                         <div class="bio-summary">
                             <h3>人物简介</h3>
-                            <p>在此记录人物所处历史阶段、关键角色与重大贡献，突出其在党史中的位置。</p>
-                            <p>可引用重要讲话或文献陈述人物精神，为后续讨论提供权威依据。</p>
+                            <p>王光，1920年出生于山西省运城市，原名赵晶璠，后投身革命改名王光。她出生于一个贫苦家庭，自幼被卖到地主家做丫鬟，饱尝人间疾苦，这段经历也塑造了她坚韧不拔的性格和对旧社会的深刻仇恨。抗日战争全面爆发后，她毅然投身抗日救亡运动，1939年加入中国共产党，并担任冀氏县（今属安泽县）一区区长、区委书记等职，是当时太岳革命根据地一位杰出的女性基层干部。
+                            </p>
                         </div>
                         <figure class="bio-portrait">
                             <span class="portrait-placeholder">人物照片</span>
-                            <figcaption>说明图片拍摄背景，保持页面信息完整性。</figcaption>
+                            <figcaption>图片由AI生成</figcaption>
                         </figure>
                     </section>
                     <section class="bio-details">
                         <h4>人物信息补充</h4>
-                        <p>建议列出人物主要事件的时间线，或以要点形式呈现关键成果。</p>
-                        <p>可对其精神内涵进行概括，并联系新时代实践阐释现实意义。</p>
+                        <p>王光的工作事迹充分体现了她深入群众、英勇果敢的特点。作为区长，她经常冒着生命危险，深入敌占区发动群众，组织抗日武装，开展减租减息运动，深受当地百姓的爱戴。她不仅是一位优秀的组织者，更是一位无畏的战士。在反“扫荡”斗争中，她亲自带领区小队和民兵与日伪军周旋，屡次给敌人以沉重打击。她的名字让敌人闻风丧胆，也成为了当地群众心中的一面旗帜。
+                        </p>
+                        <p>1943年10月，在一次日伪军的大“扫荡”中，王光为了掩护区委机关和群众转移，主动将敌人引向自己。在突围过程中，她不幸受伤被捕。被捕后，灭绝人寰的日军对她施以了极其残忍的酷刑，但王光始终大义凛然，痛斥日寇的侵略行径，没有透露任何党的秘密。最后，凶残的敌人割掉了她的舌头、乳房，挖掉了她的双眼，王光壮烈牺牲，年仅23岁。王光的牺牲“展现了中华女儿宁死不屈的伟大民族气节”，她的英雄壮举至今仍在三晋大地传颂，激励着后人。
+                        </p>
                     </section>
                 </div>
             </div>
 
             <div class="card" data-index="5">
                 <div class="card-header">
-                    <h2 class="card-title">人物四</h2>
-                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                    <h2 class="card-title">社会主义建设时期</h2>
+                    <p class="card-subtitle">申纪兰</p>
                 </div>
                 <div class="card-content">
                     <section class="bio-hero">
                         <div class="bio-summary">
                             <h3>人物简介</h3>
-                            <p>归纳人物的重要经历，聚焦与党和国家发展密切相关的贡献。</p>
-                            <p>可在此引入与人物相关的历史背景，使读者快速建立时空坐标。</p>
+                            <p>申纪兰（1929年12月29日-2020年6月28日），汉族，山西平顺人，“共和国勋章”获得者，连续13届全国人大代表，一生致力于为农民谋福利、推动妇女权益保障与山区发展。1951年，她担任西沟村初级农业生产合作社副社长时，率先倡导“男女同工同酬”，并推动这一理念于1954年写入宪法；改革开放后，她带领西沟村探索“双层经营”模式，创办村办企业，发展红色与生态旅游，让昔日贫瘠的山村走上致富路。她还提出众多涵盖“三农”、交通、教育等领域的议案建议，为老区发展注入动力，用一生践行了“当代表就要给人民办事”的誓言。
+                            </p>
                         </div>
                         <figure class="bio-portrait">
                             <span class="portrait-placeholder">人物照片</span>
-                            <figcaption>为照片添加必要的版权信息或出处链接。</figcaption>
+                            <figcaption>图片由AI生成</figcaption>
                         </figure>
                     </section>
                     <section class="bio-details">
                         <h4>人物信息补充</h4>
-                        <p>可从政策推动、群众工作、理论研究等角度补充人物贡献。</p>
-                        <p>如有需要，可加入表格或引用块对重要信息进行重点标注。</p>
+                        <p>申纪兰的革命与工作生涯始终扎根基层、坚守初心。1946年参加革命工作后，她婚后第6天便下地劳动，带领妇女走出家门参与生产，打破了封建社会对妇女的束缚。1973年至1983年担任山西省妇联主任期间，她坚持“不领工资、不转户口、不定级别、不坐专车”，始终保持农民本色；任职期满后毅然回到西沟村，全身心投入家乡建设，从植树造林两万五千亩改善生态，到搭建现代化香菇大棚提供就业岗位，每一项举措都紧扣群众需求。
+                        </p>
+                        <p>她的奉献精神赢得了无数荣誉与认可。2018年获“改革先锋”称号，2019年被授予“共和国勋章”，还先后获评全国劳动模范、全国道德模范等。2020年逝世后，上万名群众自发前来吊唁，她的骨灰被运回西沟村，与这片她奋斗了一生的土地永远相伴。她的事迹不仅成为中国妇女解放与乡村振兴的生动缩影，更铸就了“听党话、跟党走，为人民服务”的精神丰碑。
+                        </p>
                     </section>
                 </div>
             </div>
 
             <div class="card" data-index="6">
                 <div class="card-header">
-                    <h2 class="card-title">人物五</h2>
-                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                    <h2 class="card-title">社会主义建设时期</h2>
+                    <p class="card-subtitle">赵雪芳</p>
                 </div>
                 <div class="card-content">
                     <section class="bio-hero">
                         <div class="bio-summary">
                             <h3>人物简介</h3>
-                            <p>呈现人物在其领域内的开创性成就，突出“先锋模范”属性。</p>
-                            <p>可结合时代背景，说明其贡献为何具有里程碑意义。</p>
+                            <p>赵雪芳是山西医科大学杰出校友，生前担任长治市人民医院妇产科医生，被誉为“人民好医生”，以精湛医术和无私奉献的精神诠释了“救死扶伤”的誓言，是全国第一枚白求恩奖章的获得者。即便身患三种癌症，她依然坚守手术台，把病人的安危放在首位，用生命践行医者使命。最令人动容的是，1991年她回老家为母亲奔丧时，发现家乡妇女深受妇科疾病困扰，便在母亲出殡当天下午就换上白大褂开展义诊，在简陋条件下为300多位乡亲检查，甚至靠手电筒光亮用消毒汤勺为宫外孕大出血患者完成紧急手术，挽救了生命。
+                            </p>
                         </div>
                         <figure class="bio-portrait">
                             <span class="portrait-placeholder">人物照片</span>
-                            <figcaption>允许在此描述人物的精神风貌或表情细节。</figcaption>
+                            <figcaption>图片由AI生成</figcaption>
                         </figure>
                     </section>
                     <section class="bio-details">
                         <h4>人物信息补充</h4>
-                        <p>可补充人物的代表性作品、政策推动或获得的国家级荣誉。</p>
-                        <p>如有对外交流或国际影响，可在此段进行延伸说明。</p>
+                        <p>从医多年来，赵雪芳始终扎根太行山区，把全部心血倾注于妇产科事业。她对待患者不分贫富、一视同仁，不仅用心医治身体的病痛，更用温暖关怀抚慰心灵。为了提升诊疗水平，她不断钻研业务，积累了丰富的临床经验，成功救治了无数危重患者，成为当地群众信赖的“健康守护神”。她的行医理念和敬业态度，影响了身边一批又一批医护人员，成为行业内的精神标杆。
+                        </p>
+                        <p>1998年，赵雪芳不幸逝世，但她的精神永远留在了太行山人民心中。山西医科大学为她树立雕像，将“救死扶伤、无私奉献”的“雪芳精神”作为办学育人的重要内核，还专门排演话剧《赵雪芳》，让每一届新生都学习她的事迹。她用一生书写了医者的责任与担当，成为医疗卫生领域的典范，激励着一代又一代医学生和医护工作者坚守初心、砥砺前行。
+                        </p>
                     </section>
                 </div>
             </div>
 
             <div class="card" data-index="7">
                 <div class="card-header">
-                    <h2 class="card-title">人物六</h2>
-                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                    <h2 class="card-title">社会主义建设时期</h2>
+                    <p class="card-subtitle">王爱爱</p>
                 </div>
                 <div class="card-content">
                     <section class="bio-hero">
                         <div class="bio-summary">
                             <h3>人物简介</h3>
-                            <p>在此总结人物的主线故事，强调其在特定领域的卓越贡献。</p>
-                            <p>可加入人物语录或身边人的评价，增强情感共鸣。</p>
+                            <p>王爱爱，1940年出生于山西榆次梨园世家，著名晋剧表演艺术家、戏剧教育家，国家级非物质文化遗产代表性传承人，被誉为“晋剧皇后”，现任山西省戏剧家协会第九届名誉主席、山西省晋剧院名誉院长等职。她七岁随祖母筱桂花学艺，九岁登台，16岁唱红晋中，1960年调入山西省晋剧院后，师从程玉英、牛桂英两位流派大师，博采众长并创新发展，创造出委婉细腻、深受观众喜爱的“爱爱腔”，成为晋剧青衣行当的里程碑式人物。从艺七十余年，她塑造了王春娥、皇后、秦香莲等诸多经典舞台形象，1962年演唱的电影《汾水长流》主题歌“汾河流水哗啦啦”流传至今，影响深远。
+                            </p>
                         </div>
                         <figure class="bio-portrait">
                             <span class="portrait-placeholder">人物照片</span>
-                            <figcaption>请在此注明摄影者或档案馆信息。</figcaption>
+                            <figcaption>图片由AI生成</figcaption>
                         </figure>
                     </section>
                     <section class="bio-details">
                         <h4>人物信息补充</h4>
-                        <p>从多维度补充人物贡献，如科技创新、基层治理、军事国防等。</p>
-                        <p>可安排小标题划分段落，方便读者快速检索重点内容。</p>
+                        <p>作为人民艺术家，王爱爱始终扎根群众，艺术足迹遍及晋、蒙、陕、冀等地及海内外，曾多次随团赴中南海演出，受到毛泽东、周恩来等老一辈革命家的接见和鼓励。她的台风稳健，刻画人物细腻入微，既能展现皇家国母的雍容华贵，也能诠释良家女子的朴实无华，演唱声情并茂，总能引发观众强烈共鸣。在艺术追求上，她始终精益求精，不断打磨技艺，将传统晋剧的精髓与时代审美相结合，推动晋剧艺术在传承中创新。
+                        </p>
+                        <p>如今八十五岁高龄的王爱爱，依然为晋剧的传承与发展奔波忙碌。她成立“王爱爱艺术工作室”，培养出34名省内外弟子，成为“爱爱腔”的重要传承人；多次应邀到省内外大专院校及香港讲学，积极参与重大艺术活动和社会公益活动。她是中国“金唱片”奖获得者，享受国务院特殊津贴，还获评“三晋英才”“非遗大师”等荣誉称号。她用一生的坚守与奉献，为晋剧艺术的传播与发展做出了巨大贡献，成为山西戏曲艺术宝库中不可或缺的珍贵财富。
+                        </p>
                     </section>
                 </div>
             </div>
 
             <div class="card" data-index="8">
                 <div class="card-header">
-                    <h2 class="card-title">人物七</h2>
-                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                    <h2 class="card-title">改革开放时期</h2>
+                    <p class="card-subtitle">杨霞</p>
                 </div>
                 <div class="card-content">
                     <section class="bio-hero">
                         <div class="bio-summary">
                             <h3>人物简介</h3>
-                            <p>总结人物在思想理论、文化传播或社会动员方面的典型贡献。</p>
-                            <p>可对重要历史事件中的关键角色进行简要梳理。</p>
+                            <p>杨霞出生于太行山腹地的沁水县，这位从山区走出的女性凭借坚韧不拔的意志完成了从硕士研究生到企业领航者的蜕变。作为土生土长的山西女儿，她将事业根基深扎故乡，在生物医药领域开创了一片新天地。从科研工作者到上市公司掌舵人，杨霞用二十余年的奋斗历程诠释了新时代山西女性敢于追梦、勇于创新的精神特质，她的足迹见证了一个山区女孩到杰出企业家的精彩蜕变。
+                            </p>
                         </div>
                         <figure class="bio-portrait">
                             <span class="portrait-placeholder">人物照片</span>
-                            <figcaption>添加拍摄背景说明，保持页面严谨。</figcaption>
+                            <figcaption>图片由AI生成</figcaption>
                         </figure>
                     </section>
                     <section class="bio-details">
                         <h4>人物信息补充</h4>
-                        <p>适合补充人物的理论观点、代表作品或群众基础。</p>
-                        <p>如涉及跨地区或跨行业协同，也可在此强调其协调能力。</p>
+                        <p>杨霞带领锦波生物在功能蛋白领域取得重大突破，建成山西省功能蛋白重点实验室，联合复旦大学等顶尖科研机构建立产学研平台。其团队研发的III型胶原蛋白核心技术达到国际先进水平，多项成果实现产业化转化，打造了从基础研究到临床应用的完整产业链。企业作为山西生物医药领域的标杆，不仅创造了显著的经济效益，更带动了当地高新技术产业发展，为资源型地区经济转型提供了生动范例。
+                        </p>
+                        <p>杨霞身上集中体现了三晋女性求真务实、敢为人先的精神品格。她以"科技创新引领产业升级"的实践，展现了女性在传统男性主导的科研和商界领域中独特的影响力。作为全国三八红旗手，她用实际行动证明：女性既能在实验室潜心钻研，也能在商界挥斥方遒。她的成功激励着更多山西女性勇敢追求事业理想，在科技创新和产业变革中展现巾帼力量，为新时代女性成长提供了可资借鉴的范本。
+                        </p>
                     </section>
                 </div>
             </div>
 
             <div class="card" data-index="9">
                 <div class="card-header">
-                    <h2 class="card-title">人物八</h2>
-                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                    <h2 class="card-title">改革开放时期</h2>
+                    <p class="card-subtitle">葛水平</p>
                 </div>
                 <div class="card-content">
                     <section class="bio-hero">
                         <div class="bio-summary">
                             <h3>人物简介</h3>
-                            <p>概述人物在新时代背景下的创新实践或改革举措。</p>
-                            <p>可引用官方报道或调研数据，突出其贡献的现实意义。</p>
+                            <p>葛水平，1966年生于山西省沁水县，中国当代作家、山西省作家协会副主席。她成长于太行山区的乡土环境中，早年学习戏曲表演，后转向文学创作。太行山的自然风貌与人文积淀成为她创作的底色，其作品始终扎根山西乡村，以《喊山》《甩鞭》等小说闻名，曾获鲁迅文学奖、赵树理文学奖等荣誉。她的经历见证了山西女性从传统乡土走向文化舞台的足迹。
+                            </p>
                         </div>
                         <figure class="bio-portrait">
                             <span class="portrait-placeholder">人物照片</span>
-                            <figcaption>图片说明示例：2023 年 ×× 地区考察现场。</figcaption>
+                            <figcaption>图片由AI生成</figcaption>
                         </figure>
                     </section>
                     <section class="bio-details">
                         <h4>人物信息补充</h4>
-                        <p>补充项目成果、群众反馈或政策落地情况，凸显示范带动作用。</p>
-                        <p>可在此强调其工作方法或制度创新点，为学习借鉴提供思路。</p>
+                        <p>葛水平以文学为媒介，将山西乡村女性的生存状态与精神世界推向全国。她的代表作《喊山》通过描绘太行山区女性的苦难与抗争，引发社会对农村女性命运的广泛关注。该作品被改编为电影后，进一步扩大了影响力。此外，她长期致力于“乡土叙事”的挖掘，在《河水带走两岸》等散文集中记录山西风土人情的变迁，为地域文化留存了珍贵文本。她亦担任山西省文联副主席，推动山西文学与女性创作的发展，成为当代山西文化领域的重要声音。
+                        </p>
+                        <p>葛水平通过作品传递出坚韧、觉醒与乡土情怀。她笔下的女性角色常以沉默中的爆发力突破生存困境，如《喊山》中哑女红霞的自我救赎，折射出底层女性对尊严的追求。她曾言：“土地和人民是文学的根”，其创作始终坚守对普通人的悲悯与对土地的热爱。这种精神激励着山西女性在传统与现代的交织中寻找自我价值，彰显了从太行山走向更广阔天地的文化自信与选择勇气。
+                        </p>
                     </section>
                 </div>
             </div>
 
             <div class="card" data-index="10">
                 <div class="card-header">
-                    <h2 class="card-title">人物九</h2>
-                    <p class="card-subtitle">姓名占位 · 核心身份定位</p>
+                    <h2 class="card-title">改革开放时期</h2>
+                    <p class="card-subtitle">谭晶</p>
                 </div>
                 <div class="card-content">
                     <section class="bio-hero">
                         <div class="bio-summary">
                             <h3>人物简介</h3>
-                            <p>总结人物的基层实践、奉献精神或集体贡献，凸显榜样力量。</p>
-                            <p>可通过数据或案例说明其工作成效，展现可复制经验。</p>
+                            <p>谭晶，1977年9月生于山西侯马，中共党员，国家一级演员，是开创“民族、美声、通俗”跨界演唱风格的女高音歌唱家，第十九届中国“十大杰出青年”获得者。1998年毕业于中国音乐学院民族声乐专业，后考入总政治部歌舞团任独唱演员，2000年获第九届青歌赛专业组通俗唱法金奖，2006年从解放军艺术学院获通俗唱法硕士学位，成为中国首个该专业硕士。她的艺术实践兼具专业性与传播力，2002年在央视春晚独唱《在那东山顶上》成名，同年发行首张同名专辑，2006年成为首位在维也纳金色大厅举办独唱音乐会的通俗歌手，此后又在伦敦皇家阿尔伯特音乐厅、悉尼歌剧院等国际舞台开唱，2011年获“中华文化人物”称号。她主演《木兰诗篇》《文成公主》等歌剧，演唱《乔家大院》主题曲《远情》等经典作品，斩获“五个一工程奖”、金唱片奖等诸多荣誉。
+                            </p>
                         </div>
                         <figure class="bio-portrait">
                             <span class="portrait-placeholder">人物照片</span>
-                            <figcaption>示例说明：人物在基层工作现场的影像资料。</figcaption>
+                            <figcaption>图片由AI生成</figcaption>
                         </figure>
                     </section>
                     <section class="bio-details">
                         <h4>人物信息补充</h4>
-                        <p>梳理人物的代表性事迹，突出长期坚守或攻坚克难的精神品质。</p>
-                        <p>可在此加入群众评价或媒体报道摘要，增强感染力。</p>
+                        <p>谭晶始终深耕民族文化传播，2016年以“尖耳朵的阿凡达妹妹”身份参加《蒙面唱将猜猜猜》，打破大众固有印象，2019年在悉尼歌剧院举办演唱会时将部分票房捐赠希望工程，2020年为西藏昌都捐赠音乐教室。她的歌声融合山西民歌韵味与现代元素，多次在奥运、亚运会等重大活动中演唱，成为传递中华文化的“艺术名片”。
+                        </p>
                     </section>
                 </div>
             </div>
 
-            <!-- 卡片12: 素材链接 -->
             <div class="card" data-index="11">
+                <div class="card-header">
+                    <h2 class="card-title">改革开放时期</h2>
+                    <p class="card-subtitle">月亮姐姐</p>
+                </div>
+                <div class="card-content">
+                    <section class="bio-hero">
+                        <div class="bio-summary">
+                            <h3>人物简介</h3>
+                            <p>月亮姐姐，本名王淏，1978年10月生于山西太原迎泽区，毕业于中国传媒大学，1998年起任央视主持人，是深受少儿喜爱的成长陪伴者与引导者。她出身艺术世家，父亲是画家，母亲为合唱团成员，山西的艺术土壤滋养了其创作根基，职业生涯中主持《七巧板》《大风车》《音乐快递》等十余档经典少儿节目，多次担任央视“六一晚会”主持人，两次获央视“优秀播音员主持人”称号。
+                            </p>
+                        </div>
+                        <figure class="bio-portrait">
+                            <span class="portrait-placeholder">人物照片</span>
+                            <figcaption>图片由AI生成</figcaption>
+                        </figure>
+                    </section>
+                    <section class="bio-details">
+                        <h4>人物信息补充</h4>
+                        <p>她的工作始终贯穿“教育性与趣味性统一”原则，在节目中通过儿歌、故事、互动游戏传递传统文化与安全知识，还改编传播山西民间故事与传统儿歌，拉近与少儿的情感距离。2025年端午期间，她回到太原为父亲画展直播宣传，与好友共游汾河景区，体验家乡生态蝶变，展现出对故土的深厚情感；2024年4月在进出口商品交易会“山西之夜”推介活动上，她动情讲述太原新貌，表达游子对故土的深情。
+                        </p>
+                        <p>作为少儿公益的践行者，月亮姐姐长期关注留守儿童成长，参与少儿公益活动，倡导亲子阅读，将媒介影响力转化为社会行动力，还创作数百首儿歌，推动国内首部爱心音乐童话剧诞生。她塑造的温暖形象打破了传统教育者的权威感，成为连接家庭、媒介与社会的重要纽带，其实践彰显了女性在少儿教育领域的独特价值。
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <!-- 卡片13: 素材链接 -->
+            <div class="card card--resource" data-index="12">
                 <div class="card-header">
                     <h2 class="card-title">素材资源</h2>
                     <p class="card-subtitle">作业相关素材文件</p>
@@ -299,35 +372,68 @@
                 <div class="card-content">
                     <div class="links-list">
                         <div class="link-item">
-                            <span class="link-name">素材文件1</span>
-                            <a href="#" class="link-url">链接地址</a>
+                            <span class="link-name">人物介绍图片由「即梦AI」转绘</span>
+                            <a href="https://jimeng.jianying.com" class="link-url">即梦AI</a>
                         </div>
                         <div class="link-item">
-                            <span class="link-name">素材文件2</span>
-                            <a href="#" class="link-url">链接地址</a>
+                            <span class="link-name">图像处理由 Google Genini Nano-Banana 模型处理</span>
+                            <a href="https://gemini.google.com/app" class="link-url">Gemini</a>
                         </div>
                         <div class="link-item">
-                            <span class="link-name">素材文件3</span>
-                            <a href="#" class="link-url">链接地址</a>
+                            <span class="link-name">铡刀下的英魂，牺牲时年仅十六岁——烈士尹灵芝</span>
+                            <a href="https://www.bilibili.com/video/BV1Ys4y127f1/" class="link-url">链接地址</a>
                         </div>
                         <div class="link-item">
-                            <span class="link-name">素材文件4</span>
-                            <a href="#" class="link-url">链接地址</a>
+                            <span class="link-name">王光，1920年生，山西运城人...</span>
+                            <a href="https://www.bilibili.com/video/BV1cjeuzAEL2" class="link-url">链接地址</a>
                         </div>
                         <div class="link-item">
-                            <span class="link-name">素材文件4</span>
-                            <a href="#" class="link-url">链接地址</a>
+                            <span class="link-name">【生的伟大，死的光荣】红色经典影片《刘胡兰》</span>
+                            <a href="https://www.bilibili.com/video/BV18X4y1K7An" class="link-url">链接地址</a>
                         </div>
                         <div class="link-item">
-                            <span class="link-name">素材文件4</span>
-                            <a href="#" class="link-url">链接地址</a>
+                            <span class="link-name">三分钟了解共和国勋章获得者申纪兰</span>
+                            <a href="https://www.bilibili.com/video/BV1ZJ411u7Ji" class="link-url">链接地址</a>
+                        </div>
+                        <div class="link-item">
+                            <span class="link-name">人民的好医生【讲巾帼英雄故事：赵雪芳】</span>
+                            <a href="https://www.bilibili.com/video/BV1jK4y1g7Sg/" class="link-url">链接地址</a>
+                        </div>
+                        <div class="link-item">
+                            <span class="link-name">「晋剧皇后」王爱爱 《角儿来了》 20180422| CCTV戏曲</span>
+                            <a href="https://www.youtube.com/watch?v=AFTC6USz4J4" class="link-url">链接地址</a>
+                        </div>
+                        <div class="link-item">
+                            <span class="link-name">【晋剧皇后·王爱爱】《人说山西好风光》选段（结尾有谢幕） </span>
+                            <a href="https://www.bilibili.com/video/BV1SL411v7fX/" class="link-url">链接地址</a>
+                        </div>
+                        <div class="link-item">
+                            <span class="link-name">王爱爱的戏曲人生#黄河电视台（20220218）</span>
+                            <a href="https://www.bilibili.com/video/BV1na411V7EB/" class="link-url">链接地址</a>
+                        </div>
+                        <div class="link-item">
+                            <span class="link-name">对话黄河丨葛水平：民间留下的东西永远都是世界性的</span>
+                            <a href="https://www.bilibili.com/video/BV1At4y1w7A4/" class="link-url">链接地址</a>
+                        </div>
+                        <div class="link-item">
+                            <span class="link-name">《鲁豫有约》谭晶专访·破茧成蝶</span>
+                            <a href="https://www.bilibili.com/video/BV1PL4y1A7ym/" class="link-url">链接地址</a>
+                        </div>
+                        <div class="link-item">
+                            <span class="link-name">【争做优秀建设者】杨霞：勇闯胶原蛋白“无人区” 17年就干一件事</span>
+                            <a href="https://www.youtube.com/watch?v=hqJGyK4H2yA/" class="link-url">链接地址</a>
+
+                        </div>
+                        <div class="link-item">
+                            <span class="link-name">央视少儿主持人讲春节风俗 月亮姐姐带你逛庙会</span>
+                            <a href="https://www.bilibili.com/video/BV1KW411y7Un/" class="link-url">链接地址</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 卡片13: 参考文献 -->
-            <div class="card" data-index="12">
+            <!-- 卡片15: 参考文献 -->
+            <div class="card card--reference" data-index="13">
                 <div class="card-header">
                     <h2 class="card-title">参考文献</h2>
                     <p class="card-subtitle">学术支撑与理论依据</p>
@@ -343,10 +449,12 @@
                                         <span class="catalog-label">视频参考文献</span>
                                         <ul class="catalog-level">
                                             <li>
-                                                <a href="#" class="catalog-link" target="_blank" rel="noopener">视频链接 1</a>
+                                                <a href="#" class="catalog-link" target="_blank" rel="noopener">视频链接
+                                                    1</a>
                                             </li>
                                             <li>
-                                                <a href="#" class="catalog-link" target="_blank" rel="noopener">视频链接 2</a>
+                                                <a href="#" class="catalog-link" target="_blank" rel="noopener">视频链接
+                                                    2</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -354,18 +462,114 @@
                                         <span class="catalog-label">文档参考文献</span>
                                         <ul class="catalog-level">
                                             <li>
-                                                <span class="catalog-entry">[1] 作者. 文献标题[J]. 期刊名称, 年份, 卷(期): 页码.</span>
+                                                <span class="catalog-entry">[1] 金冲及. 二十世纪中国史纲[M]. 北京: 中共党史出版社,
+                                                    2009.</span>
                                             </li>
                                             <li>
-                                                <span class="catalog-entry">[2] 请在此处补充书籍或文件资料，保持正式引用格式。</span>
+                                                <span class="catalog-entry">[2] 中共山西省委党史办公室编. 三晋英模[M]. 太原: 山西人民出版社,
+                                                    2019.</span>
                                             </li>
+                                            <li>
+                                                <a href="https://cpc.people.com.cn/GB/34136/2543854.html"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">中国共产党新闻>>刘胡兰：怕死不当共产党</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.sxjzdj.org.cn/index.php/index/show/catid/20043/id/52427"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">晋中党建网>>刘胡兰式的女英雄——尹灵芝</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://baike.baidu.com/reference/9813/533aYdO6cr3_z3kATPGOz_uiZymQNov67-DRALNzzqIP0XOpTI_rXZs66Zkv-_h3GA6Fs5dvLtUb2c-IFUpB6v4WdfI0RrAjlXPgVzbAzLzu_sdp3owY"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">中国共产党新闻>>党史频道>>永远的丰碑——革命先辈网上纪念馆</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://dangjian.people.com.cn/n1/2022/0629/c117092-32460138.html"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">人民网>>申纪兰：党的好女儿，人民的好代表</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://m.thepaper.cn/baijiahao_13742467" class="catalog-link"
+                                                    target="_blank" rel="noopener">山西日报>>三晋英模|人民的好医生——赵雪芳</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.ihchina.cn/character_detail/30864.html"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">中国非物质文化遗产网·中国非物质文化遗产数字博物馆>>晋剧表演艺术家王爱爱：桑榆未晚霞满天</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.chnjinju.com/m/view.php?aid=21841"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">山西戏剧网>>晋剧表演艺术家王爱爱：桑榆未晚霞满天</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="https://zgq.shanxi.gov.cn/xwzx/yqyw/202305/t20230511_8525188.shtml"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">山西转型综合改革示范区>>锦波生物董事长杨霞荣获“全国三八红旗手”称号</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="https://zgq.shanxi.gov.cn/ztx/xxxjnjll_71464/202307/t20230711_8913509.shtml"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">山西转型综合改革示范区>>杨霞：自主创新开辟人源胶原蛋白新时代</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="https://dol.sxu.edu.cn/szdw/js/865d1c8109084c2ea327b39d4f81988e.htm"
+                                                    class="catalog-link" target="_blank" rel="noopener">山西大学文学院>>葛水平</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="https://www.chinawriter.com.cn/n1/2020/0318/c405057-31637956.html"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">中国作家网>>葛水平：世界的本质就在于它有一种味道</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="https://www.chinawriter.com.cn/n1/2016/0829/c403992-28674408.html"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">中国作家网>>鲁迅文学奖作品《喊山》电影上映，原作者为乡村女性发声</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="https://d.wanfangdata.com.cn/thesis/D01533991"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">万方数据知识服务平台>>谭晶声乐演唱风格探究——以《大红公鸡毛腿腿》《远情》《白毛女》为例</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="https://d.wanfangdata.com.cn/periodical/hhzs201922020"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">万方数据知识服务平台>>谭晶版《在那东山顶上》音乐特征与演唱分析</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="http://www.xinhuanet.com/ent/tanjing/index.htm"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">新华网>>谭晶英国皇家音乐会</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="https://baike.baidu.com/item/%E6%9C%88%E4%BA%AE%E5%A7%90%E5%A7%90/9593"
+                                                    class="catalog-link" target="_blank" rel="noopener">月亮姐姐_百度百科</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="https://mp.weixin.qq.com/s?__biz=MzA3NDg1Mjg2NQ==&mid=208143245&idx=1&sn=6c1041edd7bcf811f71d64857df17e33&chksm=16e5dce3219255f5eea3b92e11bebff58e10118b65bdd47e11fb65893b68d923b5769e2dd3da&scene=27"
+                                                    class="catalog-link" target="_blank"
+                                                    rel="noopener">央视少儿>>月亮姐姐：用真诚照亮孩子们的世界</a>
+                                            </li>
+
                                         </ul>
                                     </li>
                                     <li>
                                         <span class="catalog-label">图像素材来源</span>
                                         <ul class="catalog-level">
                                             <li>
-                                                <a href="#" class="catalog-link" target="_blank" rel="noopener">图像来源链接</a>
+                                                <a href="#" class="catalog-link" target="_blank"
+                                                    rel="noopener">图像来源链接</a>
                                             </li>
                                         </ul>
                                     </li>

@@ -32,28 +32,60 @@ window.addEventListener('touchstart', triggerEntry, { once: true });
 const cards = document.querySelectorAll('.card');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
-const indicatorContainer = document.getElementById('pageIndicator');
-let indicators = [];
+const pageIndicator = document.getElementById('pageIndicator');
 let currentIndex = 0;
 
-// 根据卡片数量生成页码指示器，保持导航同步
-const buildIndicators = () => {
-    indicatorContainer.innerHTML = '';
-    cards.forEach((_, index) => {
-        const dot = document.createElement('div');
-        dot.className = 'indicator-dot';
-        dot.setAttribute('role', 'button');
-        dot.setAttribute('aria-label', `前往第 ${index + 1} 页`);
-        dot.addEventListener('click', () => {
-            currentIndex = index;
-            updateCards();
-        });
-        indicatorContainer.appendChild(dot);
-    });
-    indicators = indicatorContainer.querySelectorAll('.indicator-dot');
+// 构建可输入的页码指示器，便于快速跳转
+pageIndicator.innerHTML = '';
+pageIndicator.setAttribute('role', 'group');
+pageIndicator.setAttribute('aria-label', '页面跳转与页码信息');
+
+const pagePrefix = document.createElement('span');
+pagePrefix.className = 'page-label';
+pagePrefix.textContent = '第';
+
+const pageInput = document.createElement('input');
+pageInput.type = 'number';
+pageInput.className = 'page-input';
+pageInput.min = 1;
+pageInput.value = currentIndex + 1;
+pageInput.setAttribute('aria-label', '输入页码快速跳转');
+
+const pageDivider = document.createElement('span');
+pageDivider.className = 'page-divider';
+pageDivider.textContent = '/';
+
+const pageTotal = document.createElement('span');
+pageTotal.className = 'page-total';
+
+const pageSuffix = document.createElement('span');
+pageSuffix.className = 'page-suffix';
+pageSuffix.textContent = '页';
+
+pageIndicator.append(pagePrefix, pageInput, pageDivider, pageTotal, pageSuffix);
+
+const clampPage = (value) => {
+    if (Number.isNaN(value)) return currentIndex + 1;
+    return Math.min(cards.length, Math.max(1, value));
 };
 
-buildIndicators();
+const handlePageChange = (value) => {
+    const targetPage = clampPage(Number(value));
+    currentIndex = targetPage - 1;
+    updateCards();
+};
+
+pageInput.addEventListener('change', () => {
+    handlePageChange(pageInput.value);
+});
+
+pageInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        handlePageChange(pageInput.value);
+        pageInput.blur();
+    }
+});
 
 const updateCards = () => {
     cards.forEach((card, index) => {
@@ -65,12 +97,11 @@ const updateCards = () => {
         }
     });
 
-    indicators.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentIndex);
-    });
-
     prevBtn.disabled = currentIndex === 0;
     nextBtn.disabled = currentIndex === cards.length - 1;
+    pageInput.max = cards.length;
+    pageTotal.textContent = cards.length;
+    pageInput.value = currentIndex + 1;
 };
 
 updateCards();
@@ -91,6 +122,10 @@ nextBtn.addEventListener('click', () => {
 
 // 键盘导航
 document.addEventListener('keydown', (e) => {
+    const targetTag = e.target && e.target.tagName;
+    if (targetTag === 'INPUT' || targetTag === 'TEXTAREA') {
+        return;
+    }
     if (e.key === 'ArrowLeft') {
         prevBtn.click();
     } else if (e.key === 'ArrowRight') {
